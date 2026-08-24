@@ -11,3 +11,11 @@ Projeto desenvolvido pela equipe Sol para a disciplina de HTML
   Matrícula: 202603069141 <br>
   Github: Miguel-NewP <br>
 </p>
+
+<hr>
+
+<p>
+  Nome: Rafael Diniz Carneiro Vieira <br>
+  Matrícula: 202603228576 <br>
+  GitHub: rafaeldcv-code <br>
+</p>

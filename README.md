@@ -28,6 +28,10 @@ Projeto desenvolvido pela equipe Sol para a disciplina de HTML
   Github: Alexadre2027-PP <br>
   
 </p>
+
+<hr>
+
+<p>
      Nome: Kauan Gonçalves De Almeida <br>
      Matricula: 202602188619  <br>
      Github:  Kauanalmeida-br <br>

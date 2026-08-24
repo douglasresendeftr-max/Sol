@@ -22,8 +22,15 @@ Projeto desenvolvido pela equipe Sol para a disciplina de HTML
 
 <hr>
 
+<p>
+  Nome: Alexandre Pereira do Prado <br>
+  Matrícula: 202603037401 <br>
+  Github: Alexadre2027-PP <br>
+  
 </p>
      Nome: Kauan Gonçalves De Almeida <br>
      Matricula: 202602188619  <br>
      Github:  Kauanalmeida-br <br>
 </p>
+
+<hr>

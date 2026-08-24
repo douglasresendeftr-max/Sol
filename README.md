@@ -19,3 +19,11 @@ Projeto desenvolvido pela equipe Sol para a disciplina de HTML
   Matrícula: 202603228576 <br>
   GitHub: rafaeldcv-code <br>
 </p>
+
+<hr>
+
+</p>
+     Nome: Kauan Gonçalves De Almeida <br>
+     Matricula: 202602188619  <br>
+     Github:  Kauanalmeida-br <br>
+</p>

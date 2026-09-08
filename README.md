@@ -38,3 +38,9 @@ Projeto desenvolvido pela equipe Sol para a disciplina de HTML
 </p>
 
 <hr>
+
+<p>
+Nome: Thiago de Magalhães Costa <br>
+Matrícula: 202601758241 <br>
+Github: Thiago-Mc <br>
+</p>

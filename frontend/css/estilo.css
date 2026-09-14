@@ -1,4 +1,15 @@
- nav ul {
+/* --------------------------------------------------------------------------
+5. Tipografia/ escrito até o h3 — Thiago de Magalhães Costa
+-------------------------------------------------------------------------- */
+:root { --fonte: "Poppins", Arial, sans-serif; }
+
+body { font-family: var(--fonte); font-size: 1rem; line-height: 1.6; }
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 1.75rem; }
+h3 { font-size: 1.25rem; }
+
+nav ul {
     list-style: none;
     padding: 0;
     display: flex;

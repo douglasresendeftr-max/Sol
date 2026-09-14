@@ -1,7 +1,58 @@
 /* --------------------------------------------------------------------------
 5. Tipografia/ escrito até o h3 — Thiago de Magalhães Costa
 -------------------------------------------------------------------------- */
-:root { --fonte: "Poppins", Arial, sans-serif; }
+/* -------------------------------------------------------------------------
+1. Root/ cores dos textos e do fundo - Miguel Amorim Otoni Ribeiro
+---------------------------------------------------------------------------*/
+
+*, *::before, *::after 
+{
+    box-sizing: border-box;
+}
+
+
+:root 
+{ 
+    /*Cores dos titulos*/
+    --sobre-principal:              #FAF49B ; /*Cor do titulo principal do site*/
+    --titulo:                       #4D4DE9 ; /*Cor dos titulos basicos do site*/
+    --tituloSecundario:             #6868CE ; /*Cor dos subtitulos*/
+
+    /*Cores do texto*/
+    --texto:                        #000000 ; /*Cor do texto basico do site*/
+    --textoNav:                     #9BFAF2 ; /*Cor do texto do nav*/
+    --textoLegenda:                 #053e60 ; /*Cor da legenda da tabela*/
+    --textoTabelaHead:              #ffffff ; /*Cor do texto do cabeçario da tabela*/
+    --textoTabelaBody:              #000000 ; /*Cor do texto do corpo da tabela*/
+    --textoBotãoGeral:              #ffffff ; /*Cor do texto do botão genérico (se tiver)*/   
+    --textoBotaoFormEnviar:         #ffffff ; /*Cor do texto do botão de enviar do form*/
+    --textoBotaoFormApagar:         #6a6e70 ; /*Cor do texto do botão de apagar do form*/         
+
+    /*Cores de hover(passar o mouse por cima)*/
+    --hoverNav:                     #ffffff ; /*Cor que aparece ao colocar o mouse em cima do Nav*/
+    --hoverTabela:                  #d9d7f0 ; /*Cor que aparece ao colocar o mouse em cima da tabela*/
+    --hoverBotaoForm:               #0bb4c0 ; /*Cor que aparece ao colocar o mouse em cima do botão do Form*/
+    --hoverBotaoGeral:              #0bb4c0 ; /*Cor que aparece ao colocar o mouse em cima de um botão genérico (se tiver)*/
+
+    /*Cor das bordas*/
+    --bordaTabela:                  #f7fafa ; /*Cor da borda da tabela*/
+    --bordaForm:                    #e1e2d8 ; /*Cor da borda externa do form*/
+    --bordaFormTexto:               #b6bbc9 ; /*Cor da borda interna do form(a da caixa de texto).*/
+ 
+    /*Cores gerais do site*/
+    --principal:                    #4D4DE9 ; /*Cor principal do site*/
+    --secundaria:                   #5656AC ; /*Cor secundária do site*/
+    --detalhe:                      #0bb4c0 ; /*Cor de detalhes do site*/
+    --fundo:                        #e4f3ff ; /*Cor do background do site*/
+    --formBody:                     #ffffff ; /*Cor do body do form*/
+    --tabelaHead:                   #4D4DE9 ; /*Cor do cabeçário da tabela*/
+    --tabelaBody:                   #ffffff ; /*Cor do corpo da tabela*/
+    --nav:                          #4D4DE9 ; /*Cor do nav*/
+    --botaoApagar:                  #ffffff ; /*Cor do botão de apagar*/
+    --botaoEnviar:                  #4D4DE9 ; /*Cor do botão de enviar*/
+
+    --fonte: "Poppins", Arial, sans-serif; 
+}
 
 body { font-family: var(--fonte); font-size: 1rem; line-height: 1.6; }
 

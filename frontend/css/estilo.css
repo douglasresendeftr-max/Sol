@@ -1,15 +1,9 @@
-/* --------------------------------------------------------------------------
-5. Tipografia/ escrito até o h3 — Thiago de Magalhães Costa
--------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------
 1. Root/ cores dos textos e do fundo - Miguel Amorim Otoni Ribeiro
 ---------------------------------------------------------------------------*/
-
-*, *::before, *::after 
-{
-    box-sizing: border-box;
-}
-
+/* --------------------------------------------------------------------------
+5. Tipografia/ escrito até o h3 — Thiago de Magalhães Costa
+-------------------------------------------------------------------------- */
 
 :root 
 { 
@@ -52,6 +46,11 @@
     --botaoEnviar:                  #4D4DE9 ; /*Cor do botão de enviar*/
 
     --fonte: "Poppins", Arial, sans-serif; 
+}
+
+*, *::before, *::after 
+{
+    box-sizing: border-box;
 }
 
 body { font-family: var(--fonte); font-size: 1rem; line-height: 1.6; }

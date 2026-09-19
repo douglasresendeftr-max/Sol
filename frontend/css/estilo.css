@@ -70,3 +70,12 @@ nav ul {
 nav a {
     text-decoration: none;
 }
+
+th {
+    background-color: yellow;
+    color: black;
+}
+
+h1 {
+    color: #4D4DE9;
+}

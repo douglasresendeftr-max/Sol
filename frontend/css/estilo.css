@@ -62,6 +62,8 @@ body { font-family: var(--fonte);
 h1 { font-size: 2.5rem;
     color: var(--sobre-principal);
     padding-bottom: 12px;
+    background: var(--secundaria);
+    border-radius: 5%;
 }
 h2 { font-size: 1.75rem;
     color: var(--titulo);
@@ -102,6 +104,11 @@ caption:hover {
     color: var(--hoverTabela);
 }
 
+
+/* -------------------------------------------------------------------------
+3. Página e conteúdo/ CSS body, h1, h2, h3, img, e listas - Rafael Diniz Carneiro Vieira
+---------------------------------------------------------------------------*/
+
 ol, ul {
     padding-left: 20px;
 }
@@ -109,4 +116,9 @@ ol, ul {
 b, strong {
     font-weight: 700;
     color: var(--detalhe);
+}
+
+img {
+    width: 25rem;
+    margin: 0 auto 0;
 }

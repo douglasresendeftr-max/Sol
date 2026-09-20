@@ -1,0 +1,42 @@
+:root
+{
+    /*Cores dos titulos*/
+    --sobre-principal:              #FAF49B ; /*Cor do titulo principal do site*/
+    --titulo:                       #FAF49B ; /*Cor dos titulos basicos do site*/
+    --tituloSecundario:             #fffeb6 ; /*Cor dos subtitulos*/
+
+    /*Cores do texto*/
+    --texto:                        #ffffff ; /*Cor do texto basico do site*/
+    --textoNav:                     #9BFAF2 ; /*Cor do texto do nav*/
+    --textoLegenda:                 #053e60 ; /*Cor da legenda da tabela*/
+    --textoTabelaHead:              #ffffff ; /*Cor do texto do cabeçario da tabela*/
+    --textoTabelaBody:              #000000 ; /*Cor do texto do corpo da tabela*/
+    --textoBotãoGeral:              #ffffff ; /*Cor do texto do botão genérico (se tiver)*/   
+    --textoBotaoFormEnviar:         #ffffff ; /*Cor do texto do botão de enviar do form*/
+    --textoBotaoFormApagar:         #6a6e70 ; /*Cor do texto do botão de apagar do form*/         
+
+    /*Cores de hover(passar o mouse por cima)*/
+    --hoverNav:                     #13133a ; /*Cor que aparece ao colocar o mouse em cima do Nav*/
+    --hoverTabela:                  #2f2f33 ; /*Cor que aparece ao colocar o mouse em cima da tabela*/
+    --hoverBotaoForm:               #13133a ; /*Cor que aparece ao colocar o mouse em cima do botão do Form*/
+    --hoverBotaoGeral:              #13133a ; /*Cor que aparece ao colocar o mouse em cima de um botão genérico (se tiver)*/
+
+    /*Cor das bordas*/
+    --bordaTabela:                  #002525 ; /*Cor da borda da tabela*/
+    --bordaForm:                    #002525 ; /*Cor da borda externa do form*/
+    --bordaFormTexto:               #002525 ; /*Cor da borda interna do form(a da caixa de texto).*/
+ 
+    /*Cores gerais do site*/
+    --principal:                    #010158 ; /*Cor principal do site*/
+    --secundaria:                   #5656AC ; /*Cor secundária do site*/
+    --detalhe:                      #fffb00 ; /*Cor de detalhes do site*/
+    --fundo:                        #01031f ; /*Cor do background do site*/
+    --formBody:                     #000000 ; /*Cor do body do form*/
+    --tabelaHead:                   #4D4DE9 ; /*Cor do cabeçário da tabela*/
+    --tabelaBody:                   #000000 ; /*Cor do corpo da tabela*/
+    --nav:                          #5656AC ; /*Cor do nav*/
+    --botaoApagar:                  #ffffff ; /*Cor do botão de apagar*/
+    --botaoEnviar:                  #5656AC ; /*Cor do botão de enviar*/
+
+    --fonte: "Poppins", Arial, sans-serif; 
+}

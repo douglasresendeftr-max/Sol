@@ -70,11 +70,21 @@ nav a {
     text-decoration: none;
 }
 
-th {
-    background-color: yellow;
-    color: black;
+table, tr, th {
+    border: 2px solid var(--bordaTabela);
 }
 
-h1 {
-    color: #4D4DE9;
+th {
+    background-color: var(--tabelaBory);
+    color: var(--textoTabelaBody);
+}
+
+caption {
+    color: var(--textoTabelaHead);
+    text-align: center;
+    background-color: var(--tabelaHead);
+}
+
+caption:hover { 
+    color: var(--hoverTabela);
 }

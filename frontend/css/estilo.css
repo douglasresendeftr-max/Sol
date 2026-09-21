@@ -77,6 +77,9 @@ h3 { font-size: 1.25rem;
     padding-bottom: 8px;
 }
 
+/* ---------------------------------------------------------
+  4. Cabeçalho e Menu/ menu sem bolinha e links sem sublinhado - Kauan Gonçalves de Almeida
+--------------------------------------------------------- */
 nav ul {
     list-style: none;
     padding: 0;
@@ -138,4 +141,5 @@ img {
     margin: 0 7rem 0;
     border: 2px solid;
 }
+
 

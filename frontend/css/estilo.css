@@ -116,9 +116,9 @@ caption:hover {
 ---------------------------------------------------------------------------*/
 main {
     background-color: var(--superfície);
-    max-width: 650px;
-    margin-left: 1%;
-    margin-right: 1%;
+    max-width: 1200px;
+    margin-left: 10%;
+    margin-right: 10%;
     border: 2px solid var(--principal);
     border-radius: 1%;
 }

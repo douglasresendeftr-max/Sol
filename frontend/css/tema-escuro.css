@@ -37,6 +37,7 @@
     --nav:                          #5656AC ; /*Cor do nav*/
     --botaoApagar:                  #ffffff ; /*Cor do botão de apagar*/
     --botaoEnviar:                  #5656AC ; /*Cor do botão de enviar*/
+    --superfície:                   #2c2c3a;  /*cor sobre o --fundo*/
 
     --fonte: "Poppins", Arial, sans-serif; 
 }

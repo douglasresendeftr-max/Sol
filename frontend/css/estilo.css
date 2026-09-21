@@ -32,6 +32,7 @@
     --bordaTabela:                  #f7fafa ; /*Cor da borda da tabela*/
     --bordaForm:                    #e1e2d8 ; /*Cor da borda externa do form*/
     --bordaFormTexto:               #b6bbc9 ; /*Cor da borda interna do form(a da caixa de texto).*/
+
  
     /*Cores gerais do site*/
     --principal:                    #4D4DE9 ; /*Cor principal do site*/
@@ -44,6 +45,8 @@
     --nav:                          #4D4DE9 ; /*Cor do nav*/
     --botaoApagar:                  #ffffff ; /*Cor do botão de apagar*/
     --botaoEnviar:                  #4D4DE9 ; /*Cor do botão de enviar*/
+    --superfície:                   #ECECEE;  /*cor sobre o --fundo*/
+    
 
     --fonte: "Poppins", Arial, sans-serif; 
 }
@@ -108,6 +111,18 @@ caption:hover {
 /* -------------------------------------------------------------------------
 3. Página e conteúdo/ CSS body, h1, h2, h3, img, e listas - Rafael Diniz Carneiro Vieira
 ---------------------------------------------------------------------------*/
+main {
+    background-color: var(--superfície);
+    max-width: 650px;
+    margin-left: 1%;
+    margin-right: 1%;
+    border: 2px solid var(--principal);
+    border-radius: 1%;
+}
+
+section {
+    margin-left: 1%;
+}
 
 ol, ul {
     padding-left: 20px;
@@ -120,5 +135,7 @@ b, strong {
 
 img {
     width: 25rem;
-    margin: 0 auto 0;
+    margin: 0 7rem 0;
+    border: 2px solid;
 }
+

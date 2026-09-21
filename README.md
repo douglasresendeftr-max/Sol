@@ -115,6 +115,3 @@ Ela vem **depois** do `estilo.css`.
 | Kauan Gonçalvez de Almeida | cabeçalho e menu |
 | Douglas Resende Furtado | tabela |
 | Alexander Pereira do Padro | formulário e rodapé |
-
-
-Miguel Amorim Otoni Ribeiro ; Thiago Magalhães Costa ; Rafael Diniz Carneiro Vieira ; Kauan Gonçalvez de Almeida ; Douglas Resende Furtado ; alexander Pereira do Padro.

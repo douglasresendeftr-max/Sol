@@ -15,8 +15,8 @@
 
 # <Nome do projeto>
 
-**Assunto:** <em uma frase, do que este site trata>
-**Equipe:** <Nome 1> · <Nome 2> · <Nome 3> · <Nome 4> · <Nome 5> · <Nome 6>
+**Assunto:** Página inicial de um pet shop e hospital veterinario focado em apresentar o seu trabalho e planos futuros além de proporcionar uma forma fácil de contato.
+**Equipe:** Miguel Amorim Otoni Ribeiro · Thiago Magalhães Costa · Rafael Diniz Carneiro Vieira · Kauan Gonçalvez de Almeida · Douglas Resende Furtado · alexander Pereira do Padro.
 **Disciplina:** ARA0062 — Desenvolvimento Web em HTML5, CSS, JavaScript e PHP
 **Centro Universitário Newton Paiva · 2026/2**
 
@@ -24,15 +24,10 @@
 
 ## Sobre o projeto
 
-<Dois parágrafos, no máximo.>
+O projeto é um site de Pet Shop e Hospital Veterinário, voltado para pessoas que possuem animais de estimação e procuram produtos, serviços e atendimento para seus pets. Quem acessar o site poderá conhecer melhor o Pet Shop, consultar os produtos disponíveis, conhecer os serviços e entrar em contato com a equipe.
 
-<O primeiro diz **o que é** e **para quem é**: quem visita este site, e o que
-essa pessoa vem fazer aqui. "Um site para a Padaria do Bairro, onde o cliente
-vê os produtos do dia e encomenda bolo de aniversário.">
+A equipe está com a meta de colocar novos links para outras páginas e Mudar o cursor do mouse, substituindo a seta padrão por outra imagem.
 
-<O segundo diz o que o site vai ter até o fim do semestre — as páginas, o
-formulário, o que será gravado no banco. É um plano, não uma promessa: ele
-pode mudar, e vocês atualizam este arquivo quando mudar.>
 
 ---
 
@@ -46,36 +41,35 @@ a equipe não mudar de ideia a cada aula.*
 
 | Papel | Cor | Por que esta |
 |---|---|---|
-| `--principal` | `#______` | <onde aparece, e o que ela comunica sobre o assunto> |
-| `--sobre-principal` | `#______` | <o texto que fica em cima da principal> |
-| `--apoio` | `#______` | <botões, destaques> |
-| `--fundo` | `#______` | <o fundo da página> |
-| `--superficie` | `#______` | <cartões e conteúdo> |
-| `--texto` | `#______` | <a cor das letras> |
+| `--principal` | `#4D4DE9` | Cor mais chamativa para fazer contraste com a --sobre-principal |
+| `--sobre-principal` | `#FAF49B` | Cor ligada a emoções mais alegres e leves. |
+| `--destaque` | `#0bb4c0` | Cor diferenciada e que sai dos padrões da maioria dos sites. |
+| `--fundo` | `#e4f3ff` | semelhante ao branco para transmitir calma. |
+| `--superficie` | `#ECECEE` | Cor para separar o fundo do conteúdo sendo clara para transmitir calma também. |
+| `--texto` | `#000000` | uma cor padrão para evitar exagero ou poluição visual. |
 
 **Contraste conferido** em <https://webaim.org/resources/contrastchecker/>:
 
 ```
---texto sobre --superficie ......... __,_:1
---principal sobre --superficie ..... __,_:1
---sobre-principal sobre --principal  __,_:1
+--texto sobre --superficie ......... 9,9:1
+--principal sobre --superficie ..... 5,0:1
+--sobre-principal sobre --principal  5,19:1
 ```
 
 *Todos precisam ficar em 4,5:1 ou acima.*
 
 ### Tipografia
 
-**Fonte:** <"Nome da fonte">, com plano B `<fonte de sistema>, sans-serif`
+**Fonte:** "Poppins", com plano B `<fonte de sistema>, sans-serif`
 **Pesos:** 400 e <600 ou 700>
-**Por que esta:** <uma frase ligando a fonte ao assunto>
+**Por que esta:** Uma fonte clássica e segura para um site de informação de um estabelecimento.
 
 **Escala:** `h1` 2.5rem · `h2` 1.75rem · `h3` 1.25rem · corpo 1rem
 
 ### Segundo tema
 
 **Arquivo:** `frontend/css/tema-<nome>.css`
-**O que é:** <em que situação este tema seria usado — modo escuro, uma data
-comemorativa, uma campanha>
+**O que é:** O segundo tema é ideal para quem optar por utilizar o site no modo escuro.
 
 Para ligá-lo, tire o comentário da linha do `<link>` no `frontend/index.html`.
 Ela vem **depois** do `estilo.css`.
@@ -112,14 +106,15 @@ Ela vem **depois** do `estilo.css`.
 
 ## Quem fez o quê
 
-*Uma linha por integrante. É o mapa de quem procurar quando algo quebra — e
-bate com o histórico de commits.*
 
 | Integrante | Parte da folha de estilo |
 |---|---|
-| <Nome 1> | o `:root`, o `box-sizing` e o segundo tema |
-| <Nome 2> | tipografia: web font, escala e entrelinha |
-| <Nome 3> | página e conteúdo |
-| <Nome 4> | cabeçalho e menu |
-| <Nome 5> | tabela |
-| <Nome 6> | formulário e rodapé |
+| Miguel Amorim Otoni Ribeiro | o `:root`, o `box-sizing` e o segundo tema |
+| Thiago Magalhães Costa | tipografia: web font, escala e entrelinha |
+| Rafael Diniz Carneiro Vieira | página e conteúdo |
+| Kauan Gonçalvez de Almeida | cabeçalho e menu |
+| Douglas Resende Furtado | tabela |
+| Alexander Pereira do Padro | formulário e rodapé |
+
+
+Miguel Amorim Otoni Ribeiro ; Thiago Magalhães Costa ; Rafael Diniz Carneiro Vieira ; Kauan Gonçalvez de Almeida ; Douglas Resende Furtado ; alexander Pereira do Padro.

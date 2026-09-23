@@ -118,7 +118,7 @@ caption:hover {
 3. Página e conteúdo/ CSS body, h1, h2, h3, img, e listas - Rafael Diniz Carneiro Vieira
 ---------------------------------------------------------------------------*/
 main {
-    background-color: var(--superfície);
+    background-color: var(--superficie);
     max-width: 1200px;
     margin-left: 10%;
     margin-right: 10%;

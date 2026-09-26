@@ -45,7 +45,7 @@
     --nav:                          #4D4DE9 ; /*Cor do nav*/
     --botaoApagar:                  #ffffff ; /*Cor do botão de apagar*/
     --botaoEnviar:                  #4D4DE9 ; /*Cor do botão de enviar*/
-    --superfície:                   #ECECEE;  /*cor sobre o --fundo*/
+    --superficie:                   #ECECEE;  /*cor sobre o --fundo*/
     
 
     --fonte: "Poppins", Arial, sans-serif; 
@@ -126,7 +126,7 @@ caption:hover {
 3. Página e conteúdo/ CSS body, h1, h2, h3, img, e listas - Rafael Diniz Carneiro Vieira
 ---------------------------------------------------------------------------*/
 main {
-    background-color: var(--superfície);
+    background-color: var(--superficie);
     max-width: 1200px;
     margin-left: 10%;
     margin-right: 10%;
@@ -147,10 +147,17 @@ b, strong {
     color: var(--detalhe);
 }
 
+
 img {
-    width: 25rem;
-    margin: 0 7rem 0;
+    display: block;
+    width: 50%;
+    margin-left: 2rem; 
     border: 2px solid;
+}
+
+p {
+    max-width: 55rem;
+    color: var(--texto);
 }
 
 

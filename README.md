@@ -114,4 +114,4 @@ Ela vem **depois** do `estilo.css`.
 | Rafael Diniz Carneiro Vieira | página e conteúdo |
 | Kauan Gonçalvez de Almeida | cabeçalho e menu |
 | Douglas Resende Furtado | tabela |
-| Alexander Pereira do Padro | formulário e rodapé |
+| Alexandre Pereira do Padro | formulário e rodapé |

@@ -139,13 +139,16 @@ b, strong {
     color: var(--detalhe);
 }
 
+
 img {
-    width: 25rem;
-    margin: 0 7rem 0;
+    display: block;
+    width: 50%;
+    margin-left: 2rem; 
     border: 2px solid;
 }
 
 p {
+    max-width: 55rem;
     color: var(--texto);
 }
 

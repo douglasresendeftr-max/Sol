@@ -94,6 +94,14 @@ nav a {
 /* -------------------------------------------------------------------------
 5. Tabela/ cores dos textos e do fundo - Douglas Resende Furtado
 ---------------------------------------------------------------------------*/
+th {
+    height: 30px;
+}
+
+td {
+    height: 50px;
+}
+
 table, tr, th {
     border: 2px solid var(--bordaTabela);
 }

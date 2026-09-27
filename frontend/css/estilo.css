@@ -94,7 +94,10 @@ nav ul {
 nav a {
     text-decoration: none;
 }
-
+nav {
+    border-bottom: 2px solid var(--principal);
+    padding-bottom: 10px;
+}
 /* -------------------------------------------------------------------------
 5. Tabela/ cores dos textos e do fundo - Douglas Resende Furtado
 ---------------------------------------------------------------------------*/

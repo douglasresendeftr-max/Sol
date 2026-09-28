@@ -80,6 +80,10 @@ h3 { font-size: 1.25rem;
 /* ---------------------------------------------------------
   4. Cabeçalho e Menu/ menu sem bolinha e links sem sublinhado - Kauan Gonçalves de Almeida
 --------------------------------------------------------- */
+header {
+    text-align: center;
+}
+
 nav ul {
     list-style: none;
     padding: 0;
@@ -90,7 +94,10 @@ nav ul {
 nav a {
     text-decoration: none;
 }
-
+nav {
+    border-bottom: 2px solid var(--principal);
+    padding-bottom: 10px;
+}
 /* -------------------------------------------------------------------------
 5. Tabela/ cores dos textos e do fundo - Douglas Resende Furtado
 ---------------------------------------------------------------------------*/

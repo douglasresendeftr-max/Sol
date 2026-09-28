@@ -8,9 +8,9 @@
     /*Cores do texto*/
     --texto:                        #ffffff ; /*Cor do texto basico do site*/
     --textoNav:                     #9BFAF2 ; /*Cor do texto do nav*/
-    --textoLegenda:                 #053e60 ; /*Cor da legenda da tabela*/
+    --textoLegenda:                 #0fe9e9 ; /*Cor da legenda da tabela*/
     --textoTabelaHead:              #ffffff ; /*Cor do texto do cabeçario da tabela*/
-    --textoTabelaBody:              #000000 ; /*Cor do texto do corpo da tabela*/
+    --textoTabelaBody:              #ffffff ; /*Cor do texto do corpo da tabela*/
     --textoBotãoGeral:              #ffffff ; /*Cor do texto do botão genérico (se tiver)*/   
     --textoBotaoFormEnviar:         #ffffff ; /*Cor do texto do botão de enviar do form*/
     --textoBotaoFormApagar:         #6a6e70 ; /*Cor do texto do botão de apagar do form*/         
@@ -34,7 +34,7 @@
     --formBody:                     #000000 ; /*Cor do body do form*/
     --tabelaHead:                   #4D4DE9 ; /*Cor do cabeçário da tabela*/
     --tabelaBody:                   #000000 ; /*Cor do corpo da tabela*/
-    --nav:                          #5656AC ; /*Cor do nav*/
+    --nav:                          #9595EA ; /*Cor do nav*/
     --botaoApagar:                  #ffffff ; /*Cor do botão de apagar*/
     --botaoEnviar:                  #5656AC ; /*Cor do botão de enviar*/
     --superficie:                   #2c2c3a;  /*cor sobre o --fundo*/

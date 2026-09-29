@@ -167,4 +167,41 @@ p {
     color: var(--texto);
 }
 
+form {
+    width: 100%;
+    max-width: 60rem;
+    margin: 1rem auto 2rem;
+    padding: 1rem;
+   
+    background-color: var(--formBody);
+    border: 1px solid var(--bordaForm);
+    border-radius: 1rem;
+}
+
+
+
+form label {
+    display: block;
+    margin-bottom: 1rem;
+   
+    color: var(--texto);
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+
+form button {
+    background-color: var(--botaoApagar);
+    color: var(--textoBotaoFormApagar);
+    border: 1px solid var(--bordaFormTexto);
+}
+
+
+footer {
+    background-color: var(--secundaria);
+    color: var(--texto);
+    text-align: center;
+    padding: 1rem 10rem;
+    margin: 1rem;
+}
 

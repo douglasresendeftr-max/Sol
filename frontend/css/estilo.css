@@ -205,3 +205,14 @@ footer {
     margin: 1rem;
 }
 
+
+/*Podem alterar os valores, mas essa variável PRECISA existir*/
+
+.aviso {
+    margin:var(--e-2) 0 0;
+    padding: var(--e-1) var(--e-2);
+    border-left: 4px solid var(--principal);
+    background-color: var(--superficie);
+    color: var(--texto);
+    font-weight: 600;
+}

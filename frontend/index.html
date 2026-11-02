@@ -10,15 +10,19 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-        <script src="js/script.js"></script>
+        <script src="js/script.js" defer></script>
 </head>
 
 <body>
     <main>
         <header>
             <h1>PetShop Sol</h1>
-            <p id="saudacao">Olá</p>
-            <button type="button" id="botao-tema" class="botao-tema">Tema Noite</button>
+            
+            <div class="cabecalho-saudacao">
+                <p id="saudacao"></p>
+                <button type="button" id="botao-tema" class="botao-tema">Tema Escuro</button>
+            </div>
+
             <nav>
                 <ul>
                     <li><a href="#quem-somos">Quem somos nós</a></li>
@@ -93,7 +97,8 @@
 
                     <div>
                         <label for="assunto">Do que se trata?</label>
-                        <select id="assunto" name="assunto">
+                        <select id="assunto" name="assunto" required>
+                            <option value="" disabled selected>Escolha uma opção</option> 
                             <option value="Creche">Creche para seu Pet</option>
                             <option value="consulta">Consulta Veterinária</option>
                             <option value="outro">Outro</option>
@@ -102,7 +107,8 @@
 
                     <div>
                         <label for="mensagem">Algo mais?</label>
-                        <textarea id="mensagem" name="mensagem"></textarea>
+                        <textarea id="mensagem" name="mensagem" maxlength="500"></textarea>
+                        <p id="contador" class="aviso">Máximo 500 caracteres</p>
                     </div>
 
                     <div>

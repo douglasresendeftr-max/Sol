@@ -12,18 +12,18 @@
     --textoTabelaHead:              #ffffff ; /*Cor do texto do cabeçario da tabela*/
     --textoTabelaBody:              #ffffff ; /*Cor do texto do corpo da tabela*/
     --textoBotãoGeral:              #ffffff ; /*Cor do texto do botão genérico (se tiver)*/   
-    --textoBotaoFormEnviar:         #ffffff ; /*Cor do texto do botão de enviar do form*/
+    --textoBotaoFormEnviar:         #000000 ; /*Cor do texto do botão de enviar do form*/
     --textoBotaoFormApagar:         #6a6e70 ; /*Cor do texto do botão de apagar do form*/         
 
     /*Cores de hover(passar o mouse por cima)*/
-    --hoverNav:                     #13133a ; /*Cor que aparece ao colocar o mouse em cima do Nav*/
-    --hoverTabela:                  #2f2f33 ; /*Cor que aparece ao colocar o mouse em cima da tabela*/
-    --hoverBotaoForm:               #13133a ; /*Cor que aparece ao colocar o mouse em cima do botão do Form*/
+    --hoverNav:                     #3d3dad ; /*Cor que aparece ao colocar o mouse em cima do Nav*/
+    --hoverTabela:                  #232342 ; /*Cor que aparece ao colocar o mouse em cima da tabela*/
+    --hoverBotaoForm:               #fffb00 ; /*Cor que aparece ao colocar o mouse em cima do botão do Form*/
     --hoverBotaoGeral:              #13133a ; /*Cor que aparece ao colocar o mouse em cima de um botão genérico (se tiver)*/
 
     /*Cor das bordas*/
     --bordaTabela:                  #002525 ; /*Cor da borda da tabela*/
-    --bordaForm:                    #002525 ; /*Cor da borda externa do form*/
+    --bordaForm:                    #027777 ; /*Cor da borda externa do form*/
     --bordaFormTexto:               #002525 ; /*Cor da borda interna do form(a da caixa de texto).*/
  
     /*Cores gerais do site*/
@@ -36,8 +36,9 @@
     --tabelaBody:                   #000000 ; /*Cor do corpo da tabela*/
     --nav:                          #9595EA ; /*Cor do nav*/
     --botaoApagar:                  #ffffff ; /*Cor do botão de apagar*/
-    --botaoEnviar:                  #5656AC ; /*Cor do botão de enviar*/
-    --superficie:                   #2c2c3a;  /*cor sobre o --fundo*/
+    --botaoEnviar:                  #FAF49B ; /*Cor do botão de enviar*/
+    --superficie:                   #2c2c3a ; /*cor sobre o --fundo*/
+    --zebraTabela:                  #31313f ; /*cor do zebra da tabela*/
 
     --fonte: "Poppins", Arial, sans-serif; 
 }

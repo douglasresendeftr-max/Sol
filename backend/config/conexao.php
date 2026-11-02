@@ -1,4 +1,6 @@
 <?php
-/* ================================================================================
-esse arquivo é o responsável pela conexão com o banco de dados, assunto do ciclo 8
-================================================================================= */
+$servidor = "localhost";
+$banco = "Sol";
+$usuario = "root";
+$senha = "";
+$conexao = new PDO("mysql:host=$servidor;dbname=$banco;charset=utf8mb4", $usuario, $senha);

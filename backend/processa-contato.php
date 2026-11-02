@@ -2,7 +2,6 @@
 /* ====================================================
  esse é o arquivo que recebe o formulário no ciclo 8
  ===================================================== */
-<?php
 /* Recebe o formulário e salva a mensagem no banco. */
 
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {

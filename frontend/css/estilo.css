@@ -317,6 +317,30 @@ footer p
 
 /*Podem alterar os valores, mas essa variável PRECISA existir*/
 
+.cabecalho-saudacao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+
+.botao-tema {
+    background-color: var(--principal);
+    color: var(--textoBotãoGeral);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 1rem;
+}
+
+.botao-tema:hover {
+    background-color: var(--hoverBotaoGeral);
+}
+
+
 .aviso {
     margin:var(--e-2) 0 0;
     padding: var(--e-1) var(--e-2);
@@ -326,6 +350,13 @@ footer p
     font-weight: 600;
 }
 
+
 .aviso:empty {
     display: none;
+}
+
+.alerta {
+    border-color: var(--superficie);
+    background-color: var(--detalhe);
+    color: var(--texto);
 }

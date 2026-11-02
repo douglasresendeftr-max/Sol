@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Petshop Sol</title>
     <link rel="stylesheet" href="css/estilo.css">
     <!-- <link rel="stylesheet" href="css/tema-escuro.css"> -->
     <link
@@ -99,12 +99,12 @@
 
                     <div>
                         <label for="mensagem">Algo mais?</label>
-                        <textarea id="mensagem" name="mensagem" rows="5" cols="40"></textarea>
+                        <textarea id="mensagem" name="mensagem"></textarea>
                     </div>
 
                     <div>
-                        <input type="checkbox" id="copia" name="copia" value="sim">
                         <label for="copia">Quer receber uma cópia desta mensagem?</label>
+                        <input type="checkbox" id="copia" name="copia" value="sim">
                     </div>
                 </fieldset>
 
@@ -116,18 +116,20 @@
         </section>
 
         <section id="agenda">
-            <table border="1" width="100%">
+            <table>
                 <caption>Agenda do Hospital Veterinário</caption>
-
-                <tr>
-                    <th>Procedimento</th>
-                    <th>Nome do animal</th>
-                    <th>Espécie</th>
-                    <th>Raça</th>
-                    <th>Veterinário</th>
-                    <th>Data</th>
-                    <th>Horário</th>
-                </tr>
+                
+                <thead>
+                    <tr>
+                        <th>Procedimento</th>
+                        <th>Nome do animal</th>
+                        <th>Espécie</th>
+                        <th>Raça</th>
+                        <th>Veterinário</th>
+                        <th>Data</th>
+                        <th>Horário</th>
+                    </tr>
+                </thead>
 
                 <tr>
                     <td></td>

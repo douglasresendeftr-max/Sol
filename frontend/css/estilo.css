@@ -325,3 +325,7 @@ footer p
     color: var(--texto);
     font-weight: 600;
 }
+
+.aviso:empty {
+    display: none;
+}

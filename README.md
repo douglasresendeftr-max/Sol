@@ -13,7 +13,7 @@
   ============================================================================
 -->
 
-# <Nome do projeto>
+# <PetShop Sol>
 
 **Assunto:** Página inicial de um pet shop e hospital veterinario focado em apresentar o seu trabalho e planos futuros além de proporcionar uma forma fácil de contato.
 **Equipe:** Miguel Amorim Otoni Ribeiro · Thiago Magalhães Costa · Rafael Diniz Carneiro Vieira · Kauan Gonçalvez de Almeida · Douglas Resende Furtado · alexander Pereira do Padro.
@@ -109,9 +109,9 @@ Ela vem **depois** do `estilo.css`.
 
 | Integrante | Parte da folha de estilo |
 |---|---|
-| Miguel Amorim Otoni Ribeiro | o `:root`, o `box-sizing` e o segundo tema |
-| Thiago Magalhães Costa | tipografia: web font, escala e entrelinha |
-| Rafael Diniz Carneiro Vieira | página e conteúdo |
-| Kauan Gonçalvez de Almeida | cabeçalho e menu |
-| Douglas Resende Furtado | tabela |
-| Alexandre Pereira do Padro | formulário e rodapé |
+| Miguel Amorim Otoni Ribeiro | o `:root`, o `box-sizing` e o segundo tema | atualização do css|
+| Thiago Magalhães Costa | tipografia: web font, escala e entrelinha | criar código config php e o sql|
+| Rafael Diniz Carneiro Vieira | página e conteúdo | criação do código js|
+| Kauan Gonçalvez de Almeida | cabeçalho e menu | processo-contato php|
+| Douglas Resende Furtado | tabela | atualização do readme|
+| Alexandre Pereira do Padro | formulário e rodapé | criação de slide|

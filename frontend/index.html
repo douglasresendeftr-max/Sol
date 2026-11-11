@@ -10,57 +10,55 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
         <script src="js/script.js" defer></script>
 </head>
 
 <body>
-    <main>
         <header>
             <h1>PetShop Sol</h1>
+            <button type="button" id="botao-tema" class="botao-tema"><i class="fa-solid fa-moon"></i></button>
             
-            <div class="cabecalho-saudacao">
-                <p id="saudacao"></p>
-                <button type="button" id="botao-tema" class="botao-tema">Tema Escuro</button>
-            </div>
-
-            <nav>
+            <nav id="menu">
                 <ul>
-                    <li><a href="#quem-somos">Quem somos nós</a></li>
-                    <li><a href="#produtos">Nossos produtos</a></li>
-                    <li><a href="#planos-futuros">Planos futuros</a></li>
-                    <li><a href="#agenda">Agenda do Hospital Veterinário</a></li>
-                    <li><a href="#contato">Contato</a></li>
+                    <li><p class="menuClicado">Página Inicial</p></li>
+                    <li><a href="html/creche.html">Creche de Animais</a></li>
+                    <li><a href="html/produtos.html">Nossos Produtos</a></li>
+                    <li><a href="html/veterinaria.html">Veterinaria</a></li>
+                </ul>
+            </nav>
+
+            <nav id="subMenu">
+                <ul>
+                    <li><a href="#quem-somos">Quem Somos Nós</a></li>
+                    <li><a href="#onde-estamos">Onde Nós Estamos</a></li>
+                    <li><a href="#planos-futuros">Planos Futuros</a></li>
                 </ul>
             </nav>
         </header>
 
-        <img src="img/imagem_Gato_pexels-andreas-klug-2164232068-39611722.jpg"
-            alt="Gatinho em cima do balcão do petshop!">
+    <main>
+        <img src="img/Loja.jpg" alt="Gatinho em cima do balcão do petshop!">
+
+        <div class="cabecalho-saudacao">
+            <p id="saudacao"></p>
+        </div>
 
         <section id="quem-somos">
-            <h2>Quem somos nós:</h2>
+            <h2>Quem somos nós</h2>
             <p>Somos uma equipe que acredita que nossos amigos peludos merecem os melhores cuidados. Por isso estamos
                 aqui, para oferecer a eles momentos de diversão com suas famílias e também, para oferecermos a vocês
                 clientes os melhores preços e produtos.</p>
         </section>
 
-        <section id="produtos">
-            <h2> Nossos produtos:</h2>
-            <p>Temos uma grande variedade de produtos em nosso estoque, desde brinquedos divertidos até caminhas e
-                roupas quientinhas para nossos amigos de quatro patas.</p>
-
-            <Ul>
-                <li><b>Ração</b></li>
-                <li><b>Brinquedos</b></li>
-                <li><b>Objetos</b></li>
-                <li><b>Roupinhas</b></li>
-            </Ul>
-
-
+        <section id="onde-estamos">
+            <h2>Onde nós estamos</h2>
+            <p>A nossa loja está na Avenida Carlos luz, proxima à faculdade Newton Paiva</p>
+            <img src="img/Mapa.jpg" id="mapa" alt="Mapa que mostra a localização da loja">
         </section>
 
         <section id="planos-futuros">
-            <h2>Planos futuros:</h2>
+            <h2>Planos futuros</h2>
             <p>No momento trabalhamos apenas com cães e gatos, porém existem outros amigos que gostariamos de atender em
                 um futuro próximo. Vejamos alguns exemplos: </p>
 
@@ -72,124 +70,13 @@
             </ul>
         </section>
 
-
-
-        <section id="contato">
-            <h2>Contato</h2>
-             <form action="../backend/processa-contato.php" method="post">
-                <fieldset>
-                    <legend>Fale Conosco</legend>
-
-                    <div>
-                        <label for="nome">Seu nome.</label>
-                        <input type="text" id="nome" name="nome" required>
-                    </div>
-
-                    <div>
-                        <label for="email">Seu e-mail.</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-
-                    <div>
-                        <label for="nomep">Qual o nome do seu Pet?</label>
-                        <input type="text" id="nomep" name="nomep" required>
-                    </div>
-
-                    <div>
-                        <label for="assunto">Do que se trata?</label>
-                        <select id="assunto" name="assunto" required>
-                            <option value="" disabled selected>Escolha uma opção</option> 
-                            <option value="Creche">Creche para seu Pet</option>
-                            <option value="consulta">Consulta Veterinária</option>
-                            <option value="outro">Outro</option>
-                        </select>
-                    </div>
-
-                    <div>
-                        <label for="mensagem">Algo mais?</label>
-                        <textarea id="mensagem" name="mensagem" maxlength="500"></textarea>
-                        <p id="contador" class="aviso">Máximo 500 caracteres</p>
-                    </div>
-
-                    <div>
-                        <label for="copia">Quer receber uma cópia desta mensagem?</label>
-                        <input type="checkbox" id="copia" name="copia" value="sim">
-                    </div>
-                </fieldset>
-
-                <div>
-                    <button type="submit">Enviar</button>
-                    <button type="reset">Limpar</button>
-                    <p id="aviso" class="aviso" aria-live="polite"></p>
-                </div>
-            </form>
-        </section>
-
-        <section id="agenda">
-            <table>
-                <caption>Agenda do Hospital Veterinário</caption>
-                
-                <thead>
-                    <tr>
-                        <th>Procedimento</th>
-                        <th>Nome do animal</th>
-                        <th>Espécie</th>
-                        <th>Raça</th>
-                        <th>Veterinário</th>
-                        <th>Data</th>
-                        <th>Horário</th>
-                    </tr>
-                </thead>
-
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-
-            </table>
-        </section>
-
-
     </main>
 
     <footer>
-        <p>Grupo Sol &middot; 2026 &middot; Desenv. Web &middot; Newton Paiva Wyden</p>
+        <p id="endereco">Av. Presidente Carlos Luz, 220 Bairro Caiçaras (Alto Caiçaras) Belo Horizonte MG, CEP 31230-010</p>
+        <p id="infoGeral">2026 &middot; Newton Paiva Wyden &middot; WYD7324 &middot; Desenv. Web &middot; Grupo Sol</p>
     </footer>
+    <img src="img/logo.jpg"  id="logo" alt="Logo da loja">
 
 </body>
 

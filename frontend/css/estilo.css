@@ -1,362 +1,505 @@
-/* -------------------------------------------------------------------------
-1. Root/ cores dos textos e do fundo - Miguel Amorim Otoni Ribeiro
----------------------------------------------------------------------------*/
-/* --------------------------------------------------------------------------
-5. Tipografia/ escrito até o h3 — Thiago de Magalhães Costa
--------------------------------------------------------------------------- */
+/*=========
+Root do Css
+=========*/
 
 :root 
 { 
     /*Cores dos titulos*/
     --sobre-principal:              #FAF49B ; /*Cor do titulo principal do site*/
     --titulo:                       #4D4DE9 ; /*Cor dos titulos basicos do site*/
-    --tituloSecundario:             #6868CE ; /*Cor dos subtitulos*/
+    --tituloPagina:                 #053E60 ; /*Cor do titulo a página*/
 
     /*Cores do texto*/
     --texto:                        #000000 ; /*Cor do texto basico do site*/
-    --textoNav:                     #9BFAF2 ; /*Cor do texto do nav*/
     --textoLegenda:                 #053E60 ; /*Cor da legenda da tabela*/
-    --textoTabelaHead:              #FFFFFF ; /*Cor do texto do cabeçario da tabela*/
-    --textoTabelaBody:              #000000 ; /*Cor do texto do corpo da tabela*/
-    --textoBotãoGeral:              #FFFFFF ; /*Cor do texto do botão genérico (se tiver)*/   
+    --textoTabelaHead:              #FFFFFF ; /*Cor do texto do cabeçario da tabela*/ 
     --textoBotaoFormEnviar:         #FFFFFF ; /*Cor do texto do botão de enviar do form*/
-    --textoBotaoFormApagar:         #6a6e70 ; /*Cor do texto do botão de apagar do form*/         
+    --textoBotaoFormApagar:         #6A6E70 ; /*Cor do texto do botão de apagar do form*/
+    --textoMenu:                    #FFFFFF ; /*Cor do texto do Menu*/
+    --textoMenuClicado:             #FAF49B ; /*Cor do texto do menu clicado*/
 
-    /*Cores de hover(passar o mouse por cima)*/
-    --hoverNav:                     #0BB4C0 ; /*Cor que aparece ao colocar o mouse em cima do Nav*/
-    --hoverTabela:                  #D9D7F0 ; /*Cor que aparece ao colocar o mouse em cima da tabela*/
+    /*Cores de hover(passar o mouse por cima)*/ 
+    --hoverTabela:                  #A5a0DA ; /*Cor que aparece ao colocar o mouse em cima da tabela*/
     --hoverBotaoForm:               #0BB4C0 ; /*Cor que aparece ao colocar o mouse em cima do botão do Form*/
-    --hoverBotaoGeral:              #0BB4C0 ; /*Cor que aparece ao colocar o mouse em cima de um botão genérico (se tiver)*/
+    --hoverBotaoTema:               #FFEE00 ; /*Cor que aparece ao colocar o mouse em cima do botão de tema*/
+    --hoverMenu:                    #FFD900 ; /*Cor que aparece ao colocar o mouse em cima do texto do menu */
+    --hoverSubMenu:                 #9BFAF2 ; /*Cor que aparece ao colocar o mouse em cima do texto do submenu*/
+    --selectPagina:                 #FFD900 ; /*Cor do select da página*/
 
-    /*Cor das bordas*/
-    --bordaTabela:                  #F7FAFA ; /*Cor da borda da tabela*/
+    /*Cores das bordas*/
     --bordaForm:                    #0BB4C0 ; /*Cor da borda externa do form*/
     --bordaFormTexto:               #B6BBC9 ; /*Cor da borda interna do form(a da caixa de texto).*/
 
+    /*Cores dos fundos do site*/
+    --fundo:                        #E4F3FF ; /*Cor do background do site*/
+    --superficie:                   #ECECEE ; /*cor sobre o --fundo*/
+    --fundoMenu:                    #5151F8 ; /*Cor do fundo do menu do site*/
+    --fundoSubMenu:                 #605DF7 ; /*Cor do fundo do subMenu do site*/
+    --fundoAviso:                   #9BFAF2 ; /*Cor do fundo do aviso*/
+
+    /*Cores da tabela*/
+    --zebraTabela:                  #bebef7 ; /*cor do zebra da tabela*/
+    --tabelaHead:                   #4D4DE9 ; /*Cor do cabeçário da tabela*/    
+    --tabelaBody:                   #FFFFFF ; /*Cor do corpo da tabela*/
+
     /*Cores gerais do site*/
     --principal:                    #4D4DE9 ; /*Cor principal do site*/
-    --secundaria:                   #5656AC ; /*Cor secundária do site*/
-    --detalhe:                      #0BB4C0 ; /*Cor de detalhes do site*/
-    --fundo:                        #E4F3FF ; /*Cor do background do site*/
-    --formBody:                     #FFFFFF ; /*Cor do body do form*/
-    --tabelaHead:                   #4D4DE9 ; /*Cor do cabeçário da tabela*/
-    --tabelaBody:                   #FFFFFF ; /*Cor do corpo da tabela*/
-    --nav:                          #4D4DE9 ; /*Cor do nav*/
+    --secundaria:                   #5959E2 ; /*Cor secundária do site*/
     --botaoApagar:                  #FFFFFF ; /*Cor do botão de apagar*/
     --botaoEnviar:                  #4D4DE9 ; /*Cor do botão de enviar*/
-    --superficie:                   #ECECEE ; /*cor sobre o --fundo*/
-    --zebraTabela:                  #E8E8EE ; /*cor do zebra da tabela*/
     
 
     --fonte: "Poppins", Arial, sans-serif; 
 }
+
+/*================
+Css gerais do site
+================*/
 
 *, *::before, *::after 
 {
     box-sizing: border-box;
 }
 
-body { font-family: var(--fonte);
-    font-size: 1rem;
-    line-height: 1.6;
+::selection 
+{
+    background-color: var(--principal);
+    color: var(--textoMenu);
+}
+
+body
+{
     background-color: var(--fundo);
-}
-
-h1 { font-size: 2.5rem;
-    color: var(--sobre-principal);
-    padding-bottom: 12px;
-    background: var(--secundaria);
-    border-radius: 5%;
-}
-h2 { font-size: 1.75rem;
-    color: var(--titulo);
-    padding-bottom: 10px;
-}
-h3 { font-size: 1.25rem;
-    color: var(--subtitulo);
-    padding-bottom: 8px;
-}
-
-/* ---------------------------------------------------------
-  4. Cabeçalho e Menu/ menu sem bolinha e links sem sublinhado - Kauan Gonçalves de Almeida
---------------------------------------------------------- */
-header {
-    text-align: center;
-}
-
-nav {
-    border-bottom: 2px solid var(--principal);
-    padding-bottom: 10px;
-    display: inline-flex;
-    width: 1200px;
-    justify-content: center;
-    margin-bottom: 10px;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    gap: 20px;
-}
-
-nav a {
-    text-decoration: none;
-    transition: color .5s;
-    color:var(--nav);
-}
-
-nav a:hover, nav a:focus-visible
-{
-    color:var(--hoverNav);
-}
-
-nav a:visited
-{
-    color:var(--nav);
-}
-
-nav a:visited:hover, nav a:visited:focus-visible
-{
-    color:var(--hoverNav);
-}
-
-/* -------------------------------------------------------------------------
-5. Tabela/ cores dos textos e do fundo - Douglas Resende Furtado
----------------------------------------------------------------------------*/
-#agenda
-{
-    margin: 0;
-    padding: 10px;
-}
-
-table {
     width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 10px;
-}
-
-table, th, td {
-    border: 1px;
-    border-style: solid;
-    border-color: var(--bordaTabela);
-}
-
-caption {
-    color: var(--textoLegenda);
-    text-align: center;
-}
-
-thead
-{
-    background-color: var(--tabelaHead);
-    color:var(--textoTabelaHead);
-}
-
-tr:nth-child(even) 
-{
-    background-color: var(--zebraTabela);
-}
-
-td {
-    height: 50px;
-}
-
-td:hover
-{
-    background-color: var(--hoverTabela);
-}
-
-/* -------------------------------------------------------------------------
-3. Página e conteúdo/ CSS body, h1, h2, h3, img, e listas - Rafael Diniz Carneiro Vieira
----------------------------------------------------------------------------*/
-main {
-    background-color: var(--superficie);
-    max-width: 1200px;
-    margin: 0 auto;
-    border: 2px solid var(--principal);
-    border-radius: 1%;
-}
-
-section {
-    margin-left: 1%;
-}
-
-ol, ul {
-    padding-left: 20px;
-}
-
-b, strong {
-    font-weight: 700;
-    color: var(--detalhe);
-}
-
-
-img {
-    display: block;
-    width: 50%;
-    margin: 0 auto; 
-    border: 2px solid;
-}
-
-p {
-    max-width: 55rem;
+    height:100%;
+    font-family: var(--fonte);
+    margin: 0;
     color: var(--texto);
 }
 
-form {
+h1
+{
+    color: var(--sobre-principal);
+    background-color: var(--principal);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    height: 70px;
     width: 100%;
-    max-width: 60rem;
-    margin: 1rem auto 2rem;
-    padding: 1rem;
-   
-    background-color: var(--formBody);
-    border: 1px solid var(--bordaForm);
-    border-radius: 1rem;
 }
+
+h2
+{
+    color: var(--titulo);
+    width: 1328.75px;
+    text-align: center;
+}
+
+h3
+{
+    color: var(--titulo);
+    width: 1328.75px;
+    text-align: center;
+    font-size: 24px;
+}
+
+/*========================
+Css do botão de mudar tema
+========================*/
+
+#botao-tema
+{
+    display: flex;
+    margin-top: -45px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    background-color: transparent;
+    border-style: none;
+    font-size: 20px;
+    color: var(--sobre-principal);
+}
+
+#botao-tema i
+{
+    cursor: pointer;
+}
+
+#botao-tema i:hover , #botao-tema i:focus-visible
+{
+    color: var(--hoverBotaoTema);
+}
+
+
+
+/*======================
+Css do menu e do submenu
+======================*/
+
+nav
+{
+    display: flex;
+    justify-content: center;
+    height: 40px;
+}
+
+nav ul
+{
+    display: inline-flex;
+    align-items: center;
+    list-style: none;
+    gap: 100px;
+    font-weight: 600;
+}
+
+nav a
+{
+    text-decoration: none;
+}
+
+nav a:link, a:visited, a:active
+{
+    color: inherit;
+}
+
+#menu
+{
+    color: var(--textoMenu);
+    background-color: var(--fundoMenu);
+}
+
+#Menu li a
+{
+    display: inline-flex;
+    text-align: center;
+    align-items: center;
+    height: 40px;
+}
+
+.menuClicado
+{
+    color: var(--textoMenuClicado);
+}
+
+#menu li a:hover , 
+#menu li a:focus-visible
+{
+    color: var(--hoverMenu);
+}
+
+#subMenu
+{
+    background-color: var(--fundoSubMenu);
+    color: var(--textoMenu);
+}
+
+#subMenu li a:visited
+{
+    text-decoration: none;
+    color:inherit
+}
+
+#subMenu li a:hover , 
+#subMenu li a:focus-visible
+{
+    color: var(--hoverSubMenu);
+}
+
+/*===================
+Css do js de saudação
+===================*/
+
+#saudacao
+{
+    text-align: center;
+}
+
+main
+{
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--superficie);
+    width: 1500px;
+}
+
+/*===================
+Css da imagem da loja
+===================*/
+img
+{
+    display: flex;
+    width: 600x;
+    height: 400px;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-style: solid;
+    border-color: var(--principal);
+    border-radius: 10%;
+}
+
+#mapa
+{
+    width: 700px;
+    height: auto;
+}
+
+/*======================
+Css dos textos da página
+======================*/
+section
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1328.75px;
+}
+
+section p
+{
+    text-align: center;
+    width: 1020px;
+}
+
+section ul
+{
+    color: var(--textoLegenda)
+}
+
+section li::marker
+{
+    color: var(--secundaria)
+}
+
+#planos-futuros
+{
+    margin-bottom: 40px;;
+}
+
+/*==========================
+Css do formulário de contato
+==========================*/
 
 legend
 {
+    margin-bottom: 20px;
     color: var(--textoLegenda);
+}
+
+form
+{
+    border-style: solid;
+    border-color: var(--bordaForm);
+    margin-bottom: 40px;
 }
 
 fieldset
 {
-    border:none;
+    width: 1328px;
+    border-style: none;
 }
 
-form label {
-    display: block;
-    margin-top: 1rem;
-   
-    color: var(--texto);
-    font-weight: 600;
-    font-size: 1rem;
-}
-
-input
+input , select
 {
-    width:  100%;
-    height: 30px;
+    width: 1300px;
+    height: 35px;
     font-size: 100%;
+    margin-bottom: 20px;
+    border-color: var(--bordaFormTexto);
+    border-style: solid;
 }
 
-#assunto
+select
 {
-    width:  100%;
-    height: 30px;
+    border-width: 2px;
+}
+
+textarea
+{
+    width: 1300px;
+    height: 55px;
     font-size: 100%;
+    border: 2px;;
+    border-color: var(--bordaFormTexto);
+    border-style: solid;
+}
+
+#contador
+{
+    margin-top: -7px;
+    text-align: left;
+    font-size: 15px;
 }
 
 #copia
 {
-    width:  17px;
-    height: 17px;
+    width: 13px;
+    height: 13px;
+    cursor: pointer;
 }
-#mensagem
+
+button
 {
-    width: 100%;
-    height: 80px;
+    height: 40px;
+    width: 80px;
+    margin-left: 10px;
+    border-radius: 10%;
+    border-style: none;
 }
 
 button[type="submit"]
 {
+    color: var(--textoBotaoFormEnviar);
     background-color: var(--botaoEnviar);
-    color:var(--textoBotaoFormEnviar);
-    width: 150px;
-    height: 40px;
-    border-radius: 1rem;
-    border-style: none;
-    font-size: 24px;
-    font-family: var(--fonte);
-    font-weight: 500;
-    margin-left: 1rem;
-}
-
-button[type="submit"]:hover
-{
-    background-color: var(--hoverBotaoForm);
+    cursor: pointer;
 }
 
 button[type="reset"]
 {
+    border-style: solid;
+    border-color: var(--bordaFormTexto);
+    color: var(--textoBotaoFormApagar);
     background-color: var(--botaoApagar);
-    color:var(--textoBotaoFormApagar);
-    width: 150px;
-    height: 40px;
-    border-radius: 1rem;
-    border-style: solid;
-    border-color: var(--bordaFormTexto);;
-    font-size: 24px;
-    font-family: var(--fonte);
-    font-weight: 500;
-}
-
-
-footer {
-    display: flex;
-    background-color: var(--superficie);
-    border: 2px;
-    border-style: solid;
-    border-color: var(--principal);
-    border-radius: 1rem;
-    width: 100%;
-    color: var(--texto);
-    padding: 20px 0;
-    margin-top: 30px;
-
-    justify-content: center;
-    font-size: 20px;
-}
-
-footer p
-{
-    color: var(--textoLegenda);
-}
-
-
-/*Podem alterar os valores, mas essa variável PRECISA existir*/
-
-.cabecalho-saudacao {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-}
-
-
-
-.botao-tema {
-    background-color: var(--principal);
-    color: var(--textoBotãoGeral);
-    border: none;
-    padding: 10px 20px;
     cursor: pointer;
-    font-size: 1rem;
-    border-radius: 1rem;
 }
 
-.botao-tema:hover {
-    background-color: var(--hoverBotaoGeral);
+button[type="submit"]:hover , 
+button[type="submit"]:focus-visible
+{
+
+    background-color: var(--hoverBotaoForm);
 }
 
+#aviso
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+    background-color: var(--fundoAviso);
+    font-size: 17px;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+    border-style: solid;
+    border-color: var(--bordaForm);
+    width: 100%;
+}
 
-.aviso {
-    margin:var(--e-2) 0 0;
-    padding: var(--e-1) var(--e-2);
-    border-left: 4px solid var(--principal);
-    background-color: var(--superficie);
-    color: var(--texto);
+/*===========
+Css do footer
+===========*/
+
+footer
+{
+    display: flex;
+    width: 100%;
+    height: 150px;
+    background-color: var(--principal);
     font-weight: 600;
+    color: var(--sobre-principal);
+}
+
+#infoGeral
+{
+    display: flex;
+    width: 295px;
+    text-align: center;
+    align-items: center;
+    margin-right: auto;
+}
+
+#endereco
+{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin-right: auto;
+    margin-left: 250px;
+    width: 275px;
+}
+
+/*===========
+Css da tabela
+===========*/
+
+table
+{
+    margin-bottom: 40px;
+}
+
+caption
+{
+    color:var(--textoLegenda);
+    text-align: left;
+}
+thead
+{
+    background-color: var(--tabelaHead);
+    color: var(--textoTabelaHead);
+}
+th
+{
+    padding: 15px;
+}
+
+tbody
+{
+    background-color: var(--tabelaBody);
+}
+
+td
+{
+    height: 45px;
+    padding: 15px;
+}
+
+tr:nth-child(even)
+{
+    background-color: var(--zebraTabela);
+}
+
+tbody tr:hover
+{
+    background-color: var(--hoverTabela);
+}
+
+/*=================
+Css da logo do site
+=================*/
+
+#logo
+{
+    width: 150px;
+    height: auto;
+    border: none;
+    margin-top: -139px;
+    margin-right: 210px;
+}
+
+/*================
+Css do html creche
+================*/
+
+#subTitulo
+{
+    color: var(--tituloPagina);
+    font-size: 28px;
+}
+
+/*=====================
+Css do html veterinaria
+=====================*/
+
+#agenda td
+{
+    font-size: 11px;
+}
+
+#agenda sup
+{
+    font-size: 13.3333px;;
 }
 
 
-.aviso:empty {
-    display: none;
-}
-
-.alerta {
-    border-color: var(--superficie);
-    background-color: var(--detalhe);
-    color: var(--texto);
-}

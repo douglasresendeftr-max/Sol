@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petshop Sol</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="../css/tema-escuro.css" id="tema-escuro" disabled>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+        <script src="../js/script.js" defer></script>
+    </head>
+
+    <body>
+        <header>
+            <h1>PetShop Sol</h1>
+            <button type="button" id="botao-tema" class="botao-tema"><i class="fa-solid fa-moon"></i></button>
+            
+            <nav id="menu">
+                <ul>
+                    <li><a href="../index.html">Página Inicial</a></li>
+                    <li><a href="../html/creche.html">Creche de Animais</a></li>
+                    <li><a href="../html/produtos.html">Nossos Produtos</a></li>
+                    <li><p class="menuClicado">Veterinaria</p></li>
+                </ul>
+            </nav>
+
+            <nav id="subMenu">
+                <ul>
+                    <li><a href="#sobre">Sobre a Veterinaria</a></li>
+                    <li><a href="#agendamento">Agendar Consulta</a></li>
+                    <li><a href="#agenda">Consultas Agendadas</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main>
+            <section id="sobre">
+                <h2 id="subTitulo">Veterinaria</h2>
+                <img src="../img/Veterinaria.jpg" alt="Imagem da clinica veterinaria da loja">
+                <p>A veterinaria é onde o seu animalzinho sera tratado e cuidado de todos os problemas que tiver</p>
+            </section>
+
+            <section id="agendamento">
+                <h3>Atendimento</h3>
+                <p>Gostaria de agenar uma estadia do seu animalzinho na creche? Preencha os dados abaixo!</p>
+
+                <form action="../backend/processa-contato.php" method="post">
+
+                    <fieldset>
+                        <legend>Preencha as lacunas</legend>
+
+                        <div>
+                            <label for="nomeVeterinaria">Seu nome</label>
+                            <input type="text" id="nomeVeterinaria" name="nomeVeterinaria" required>
+                        </div>
+
+                        <div>
+                            <label for="emailVeterinaria">Seu e-mail</label>
+                            <input type="email" id="emailVeterinaria" name="emailVeterinaria" required>
+                        </div>
+
+                        <div>
+                            <label for="nomePetVeterinaria">Qual o nome do seu pet?</label>
+                            <input type="text" id="nomePetVeterinaria" name="nomePetVeterinaria" required>
+                        </div>
+
+                        <div>
+                            <label for="pet">Qual é o seu pet?</label>
+                            <select id="pet" name="pet" required>
+                                <option value="" disabled selected>Escolha uma opção</option> 
+                                <option value="Gato">Gato</option>
+                                <option value="Cachorro">Cachorro</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="tipoAtendimento">Qual é o tipo de consulta</label>
+                            <select id="tipoAtendimento" name="tipoAtendimento" required>
+                                <option value="" disabled selected>Escolha uma opção</option> 
+                                <option value="Checkup">Checkup</option>
+                                <option value="Exame">Exame</option>
+                                <option value="Cirurgia">Cirurgia</option>
+                                <option value="Outro">Outro</option>
+
+                        
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="dataConsulta">Quando será a cosulta?</label>
+                            <input type="date" id="dataConsulta" name="dataConsulta" required>
+                        </div>
+
+                        <div>
+                            <label for="mensagem">Algo mais?</label>
+                            <textarea id="mensagem" name="mensagem" maxlength="500"></textarea>
+                            <p id="contador" class="aviso">Máximo 500 caracteres</p>
+                        </div>
+
+                        <div>
+                            <label for="copia">Quer receber uma cópia desta mensagem?</label>
+                            <input type="checkbox" id="copia" name="copia" value="sim">
+                        </div>
+                    </fieldset>
+
+                    <div>
+                        <button type="submit">Enviar</button>
+                        <button type="reset">Limpar</button>
+                        <p id="aviso" class="aviso" aria-live="polite"></p>
+                    </div>
+                </form>
+            </section>
+            
+            <section id="agenda">
+                <h3>Agenda de consultas</h3>
+                <p>Abaixo está a nossa  agenda com os atendimentos que a nossa veterinaria irá realizar durante o mês</p>
+
+                <table>
+                    <caption>Consultas</caption>
+                    <thead>
+                        <tr>
+                            <th>Domingo</th>
+                            <th>Segunda</th>
+                            <th>Terça</th>
+                            <th>Quarta</th>
+                            <th>Quinta</th>
+                            <th>Sexta</th>
+                            <th>Sabado</th>
+                        </tr>
+                    </thead>
+                    
+                    <tbody>
+
+                        <tr>
+                            <td><sup>1</sup>Checkup toddy</td>
+                            <td><sup>2</sup>  </td>
+                            <td><sup>3</sup>  </td>
+                            <td><sup>4</sup>  </td>
+                            <td><sup>5</sup>  </td>
+                            <td><sup>6</sup>  </td>
+                            <td><sup>7</sup>  </td>
+                        </tr>
+
+                        <tr>
+                            <td><sup>8</sup>  </td>
+                            <td><sup>9</sup>  </td>
+                            <td><sup>10</sup> </td>
+                            <td><sup>11</sup> </td>
+                            <td><sup>12</sup>Cirurgia safira</td>
+                            <td><sup>13</sup> </td>
+                            <td><sup>14</sup> </td>
+                        </tr>
+
+                        <tr>
+                            <td><sup>15</sup> </td>
+                            <td><sup>16</sup> </td>
+                            <td><sup>17</sup> </td>
+                            <td><sup>18</sup> </td>
+                            <td><sup>19</sup> </td>
+                            <td><sup>20</sup> </td>
+                            <td><sup>21</sup> </td>
+                        </tr>
+
+                        <tr>
+                            <td><sup>22</sup> </td>
+                            <td><sup>23</sup>Exame Theo</td>
+                            <td><sup>24</sup> </td>
+                            <td><sup>25</sup> </td>
+                            <td><sup>26</sup> </td>
+                            <td><sup>27</sup> </td>
+                            <td><sup>28</sup> </td>
+                        </tr>
+
+                        <tr>
+                            <td><sup>29</sup> </td>
+                            <td><sup>30</sup> </td>
+                            <td><sup>31</sup> </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+            </section>
+        </main>
+
+        <footer>
+            <p id="endereco">Av. Presidente Carlos Luz, 220 Bairro Caiçaras (Alto Caiçaras) Belo Horizonte MG, CEP 31230-010</p>
+            <p id="infoGeral">2026 &middot; Newton Paiva Wyden &middot; WYD7324 &middot; Desenv. Web &middot; Grupo Sol</p>
+        </footer>
+        <img src="../img/logo.jpg"  id="logo" alt="Logo da loja">
+    </body>
+</html>

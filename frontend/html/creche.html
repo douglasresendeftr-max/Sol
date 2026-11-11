@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petshop Sol</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="../css/tema-escuro.css" id="tema-escuro" disabled>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+        <script src="../js/script.js" defer></script>
+    </head>
+
+    <body>
+        <header>
+            <h1>PetShop Sol</h1>
+            <button type="button" id="botao-tema" class="botao-tema"><i class="fa-solid fa-moon"></i></button>
+            
+            <nav id="menu">
+                <ul>
+                    <li><a href="../index.html">Página Inicial</a></li>
+                    <li><p class="menuClicado">Creche de Animais</p></li>
+                    <li><a href="../html/produtos.html">Nossos Produtos</a></li>
+                    <li><a href="../html/veterinaria.html">Veterinaria</a></li>
+                </ul>
+            </nav>
+
+            <nav id="subMenu">
+                <ul>
+                    <li><a href="#sobre">Sobre a creche</a></li>
+                    <li><a href="#ocupacoes">Animais na creche</a></li>
+                    <li><a href="#estadia">Agendar estadia</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main>
+            <section id="sobre">
+                <h2 id="subTitulo">Creche de Animais</h2>
+                <img src="../img/Creche.jpg" alt="Imagem da creche de animais">
+
+                <p>A Creche é onde você deixará o seu animalzinho para que ele seja cuidado com banho, alimentação e amor</p>
+            </section>
+        
+            <section id="ocupacoes">
+                <h3>Ocupações atuais</h3>
+                <p>Abaixo estão as salas da creche, com indicações se estão ocupadas ou livres</p>
+
+                <table>
+                    <caption>Creche da petshop</caption>
+                
+                    <thead>
+                        <tr>
+                            <th>Sala</th>
+                            <th>Estado</th>
+                            <th>Tipo de Animal</th>
+                            <th>Capacidade</th>
+                            <th>Quantidade de Animais</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>20</td>
+                            <td>Livre</td>
+                            <td>Gatos</td>
+                            <td>5</td>
+                            <td>2</td>
+                        </tr>
+
+                        <tr>
+                            <td>19</td>
+                            <td>Cheia</td>
+                            <td>Cães</td>
+                            <td>5</td>
+                            <td>5</td>
+                        </tr>
+
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </section>
+
+            <section id="estadia">
+                <h3>Atendimento</h3>
+                <p>Gostaria de agenar uma estadia do seu animalzinho na creche? Preencha os dados abaixo!</p>
+
+                <form action="../backend/processa-contato.php" method="post">
+
+                    <fieldset>
+                        <legend>Preencha as lacunas</legend>
+
+                        <div>
+                            <label for="nomeCreche">Seu nome</label>
+                            <input type="text" id="nomeCreche" name="nomeCreche" required>
+                        </div>
+
+                        <div>
+                            <label for="emailCreche">Seu e-mail</label>
+                            <input type="email" id="emailCreche" name="emailCreche" required>
+                        </div>
+
+                        <div>
+                            <label for="nomePetCreche">Qual o nome do seu pet?</label>
+                            <input type="text" id="nomePetCreche" name="nomePetCreche" required>
+                        </div>
+
+                        <div>
+                            <label for="pet">Qual é o seu pet?</label>
+                            <select id="pet" name="pet" required>
+                                <option value="" disabled selected>Escolha uma opção</option> 
+                                <option value="Gato">Gato</option>
+                                <option value="Cachorro">Cachorro</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="dataInicioCreche">Quando inicia a estadia?</label>
+                            <input type="date" id="dataInicioCreche" name="dataInicioCreche" required>
+                        </div>
+
+                        <div>
+                            <label for="dataFimCreche">Quando termina a estadia?</label>
+                            <input type="date" id="dataFimCreche" name="dataFimCreche" required>
+                        </div>
+
+                        <div>
+                            <label for="mensagem">Algo mais?</label>
+                            <textarea id="mensagem" name="mensagem" maxlength="500"></textarea>
+                            <p id="contador" class="aviso">Máximo 500 caracteres</p>
+                        </div>
+
+                        <div>
+                            <label for="copia">Quer receber uma cópia desta mensagem?</label>
+                            <input type="checkbox" id="copia" name="copia" value="sim">
+                        </div>
+                    </fieldset>
+
+                    <div>
+                        <button type="submit">Enviar</button>
+                        <button type="reset">Limpar</button>
+                        <p id="aviso" class="aviso" aria-live="polite"></p>
+                    </div>
+                </form>
+            </section>                        
+        </main>
+
+        <footer>
+            <p id="endereco">Av. Presidente Carlos Luz, 220 Bairro Caiçaras (Alto Caiçaras) Belo Horizonte MG, CEP 31230-010</p>
+            <p id="infoGeral">2026 &middot; Newton Paiva Wyden &middot; WYD7324 &middot; Desenv. Web &middot; Grupo Sol</p>
+        </footer>
+        <img src="../img/logo.jpg"  id="logo" alt="Logo da loja">
+    </body>
+</html>

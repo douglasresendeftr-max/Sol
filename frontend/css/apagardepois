@@ -1,0 +1,732 @@
+
+/*=========
+Root do CSS
+=========*/
+
+:root
+{
+    /* Cores dos títulos */
+    --sobre-principal: #FAF49B;
+    --titulo: #4D4DE9;
+    --tituloPagina: #053E60;
+
+    /* Cores do texto */
+    --texto: #000000;
+    --textoLegenda: #053E60;
+    --textoTabelaHead: #FFFFFF;
+    --textoBotaoFormEnviar: #FFFFFF;
+    --textoBotaoFormApagar: #6A6E70;
+    --textoMenu: #FFFFFF;
+    --textoMenuClicado: #FAF49B;
+
+    /* Cores de hover */
+    --hoverTabela: #A5A0DA;
+    --hoverBotaoForm: #0BB4C0;
+    --hoverBotaoTema: #FFEE00;
+    --hoverMenu: #FFD900;
+    --hoverSubMenu: #9BFAF2;
+    --selectPagina: #FFD900;
+
+    /* Cores das bordas */
+    --bordaForm: #0BB4C0;
+    --bordaFormTexto: #B6BBC9;
+
+    /* Cores dos fundos */
+    --fundo: #E4F3FF;
+    --superficie: #ECECEE;
+    --fundoMenu: #5151F8;
+    --fundoSubMenu: #605DF7;
+    --fundoAviso: #9BFAF2;
+
+    /* Cores da tabela */
+    --zebraTabela: #BEBEF7;
+    --tabelaHead: #4D4DE9;
+    --tabelaBody: #FFFFFF;
+
+    /* Cores gerais */
+    --principal: #4D4DE9;
+    --secundaria: #5959E2;
+    --botaoApagar: #FFFFFF;
+    --botaoEnviar: #4D4DE9;
+
+    --fonte: "Poppins", Arial, sans-serif;
+}
+
+/*================
+CSS gerais do site
+================*/
+
+*, *::before, *::after
+{
+    box-sizing: border-box;
+}
+
+html
+{
+    width: 100%;
+    overflow-x: clip;
+}
+
+body
+{
+    background-color: var(--fundo);
+    width: 100%;
+    min-height: 100vh;
+    font-family: var(--fonte);
+    margin: 0;
+    color: var(--texto);
+    overflow-wrap: break-word;
+}
+
+::selection
+{
+    background-color: var(--principal);
+    color: var(--textoMenu);
+}
+
+/*================
+Títulos
+================*/
+
+h1
+{
+    color: var(--sobre-principal);
+    background-color: var(--principal);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    min-height: 70px;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+h2
+{
+    color: var(--titulo);
+    width: 100%;
+    max-width: 1328.75px;
+    text-align: center;
+    padding: 0 15px;
+}
+
+h3
+{
+    color: var(--titulo);
+    width: 100%;
+    max-width: 1328.75px;
+    text-align: center;
+    font-size: 24px;
+    padding: 0 15px;
+}
+
+/*========================
+Botão de mudar tema
+========================*/
+
+#botao-tema
+{
+    display: flex;
+    margin-top: -45px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    background-color: transparent;
+    border-style: none;
+    font-size: 20px;
+    color: var(--sobre-principal);
+}
+
+#botao-tema i
+{
+    cursor: pointer;
+}
+
+#botao-tema i:hover,
+#botao-tema i:focus-visible
+{
+    color: var(--hoverBotaoTema);
+}
+
+/*======================
+Menu e submenu
+======================*/
+
+nav
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 40px;
+}
+
+nav ul
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: clamp(15px, 5vw, 100px);
+    font-weight: 600;
+    padding: 0 10px;
+    margin: 0;
+    max-width: 100%;
+}
+
+nav a
+{
+    text-decoration: none;
+}
+
+nav a:link,
+nav a:visited,
+nav a:active
+{
+    color: inherit;
+}
+
+#menu
+{
+    color: var(--textoMenu);
+    background-color: var(--fundoMenu);
+}
+
+#menu li a
+{
+    display: inline-flex;
+    text-align: center;
+    align-items: center;
+    min-height: 40px;
+}
+
+.menuClicado
+{
+    color: var(--textoMenuClicado);
+}
+
+#menu li a:hover,
+#menu li a:focus-visible
+{
+    color: var(--hoverMenu);
+}
+
+#subMenu
+{
+    background-color: var(--fundoSubMenu);
+    color: var(--textoMenu);
+}
+
+#subMenu li a:visited
+{
+    text-decoration: none;
+    color: inherit;
+}
+
+#subMenu li a:hover,
+#subMenu li a:focus-visible
+{
+    color: var(--hoverSubMenu);
+}
+
+/*===================
+Saudação
+===================*/
+
+#saudacao
+{
+    text-align: center;
+    padding: 0 15px;
+}
+
+/*===================
+Conteúdo principal
+===================*/
+
+main
+{
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--superficie);
+    width: 100%;
+    max-width: 1500px;
+    min-width: 0;
+    padding: 0 15px;
+}
+
+/*===================
+Imagem da loja
+===================*/
+
+img
+{
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin: 20px auto 0;
+    border-style: solid;
+    border-color: var(--principal);
+    border-radius: 10%;
+}
+
+#mapa
+{
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+}
+
+/*======================
+Textos da página
+======================*/
+
+section
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1328.75px;
+    min-width: 0;
+    padding: 0 15px;
+}
+
+section p
+{
+    text-align: center;
+    width: 100%;
+    max-width: 1020px;
+}
+
+section ul
+{
+    color: var(--textoLegenda);
+    max-width: 100%;
+}
+
+section li::marker
+{
+    color: var(--secundaria);
+}
+
+#planos-futuros
+{
+    margin-bottom: 40px;
+}
+
+/*==========================
+Formulário de contato
+==========================*/
+
+form
+{
+    width: 100%;
+    max-width: 1328px;
+    border-style: solid;
+    border-color: var(--bordaForm);
+    margin-bottom: 40px;
+}
+
+legend
+{
+    margin-bottom: 20px;
+    color: var(--textoLegenda);
+}
+
+fieldset
+{
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    border-style: none;
+    padding: 15px;
+}
+
+input,
+select,
+textarea
+{
+    width: 100%;
+    max-width: 100%;
+    font-size: 100%;
+    border: 2px solid var(--bordaFormTexto);
+    font-family: inherit;
+}
+
+input,
+select
+{
+    height: 35px;
+    margin-bottom: 20px;
+}
+
+select
+{
+    border-width: 2px;
+}
+
+textarea
+{
+    height: 55px;
+    resize: vertical;
+}
+
+#contador
+{
+    margin-top: -7px;
+    text-align: left;
+    font-size: 15px;
+}
+
+#copia
+{
+    width: 13px;
+    height: 13px;
+    cursor: pointer;
+}
+
+button
+{
+    min-height: 40px;
+    width: 80px;
+    margin-left: 10px;
+    border-radius: 10%;
+    border-style: none;
+}
+
+button[type="submit"]
+{
+    color: var(--textoBotaoFormEnviar);
+    background-color: var(--botaoEnviar);
+    cursor: pointer;
+}
+
+button[type="reset"]
+{
+    border-style: solid;
+    border-color: var(--bordaFormTexto);
+    color: var(--textoBotaoFormApagar);
+    background-color: var(--botaoApagar);
+    cursor: pointer;
+}
+
+button[type="submit"]:hover,
+button[type="submit"]:focus-visible
+{
+    background-color: var(--hoverBotaoForm);
+}
+
+#aviso
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+    background-color: var(--fundoAviso);
+    font-size: 17px;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+    border-style: solid;
+    border-color: var(--bordaForm);
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+/*===========
+Footer
+===========*/
+
+footer
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    min-height: 150px;
+    background-color: var(--principal);
+    font-weight: 600;
+    color: var(--sobre-principal);
+    padding: 15px;
+    gap: 15px;
+}
+
+#infoGeral
+{
+    display: flex;
+    width: 295px;
+    max-width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+#endereco
+{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    width: 275px;
+    max-width: 100%;
+}
+
+/*===========
+Tabela
+===========*/
+
+table
+{
+    max-width: 100%;
+    margin-bottom: 40px;
+    border-collapse: collapse;
+}
+
+caption
+{
+    color: var(--textoLegenda);
+    text-align: left;
+}
+
+thead
+{
+    background-color: var(--tabelaHead);
+    color: var(--textoTabelaHead);
+}
+
+th
+{
+    padding: 15px;
+}
+
+tbody
+{
+    background-color: var(--tabelaBody);
+}
+
+td
+{
+    height: 45px;
+    padding: 15px;
+}
+
+tr:nth-child(even)
+{
+    background-color: var(--zebraTabela);
+}
+
+tbody tr:hover
+{
+    background-color: var(--hoverTabela);
+}
+
+/*=================
+Logo do site
+=================*/
+
+#logo
+{
+    display: block;
+    width: 150px;
+    max-width: 100%;
+    height: auto;
+    border: none;
+    margin-top: -139px;
+    margin-right: 210px;
+}
+
+/*================
+HTML creche
+================*/
+
+#subTitulo
+{
+    color: var(--tituloPagina);
+    font-size: 28px;
+}
+
+/*=====================
+HTML veterinária
+=====================*/
+
+#agenda
+{
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+#agenda td
+{
+    font-size: 11px;
+}
+
+#agenda sup
+{
+    font-size: 13.3333px;
+}
+
+/*=====================
+Responsividade
+=====================*/
+
+@media screen and (max-width: 768px)
+{
+    h1
+    {
+        font-size: 24px;
+    }
+
+    h2
+    {
+        font-size: 22px;
+    }
+
+    h3
+    {
+        font-size: 20px;
+    }
+
+    nav ul
+    {
+        gap: 15px;
+    }
+
+    #botao-tema
+    {
+        margin-top: 5px;
+        margin-left: 10px;
+    }
+
+    #logo
+    {
+        margin: 10px auto;
+    }
+
+    main
+    {
+        padding: 0 10px;
+    }
+
+    section
+    {
+        padding: 0 5px;
+    }
+
+    footer
+    {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #infoGeral,
+    #endereco
+    {
+        width: 100%;
+        justify-content: center;
+    }
+
+    table
+    {
+        display: block;
+        overflow-x: auto;
+    }
+
+    fieldset
+    {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 480px)
+{
+    h1
+    {
+        font-size: 20px;
+    }
+
+    h2
+    {
+        font-size: 20px;
+    }
+
+    h3
+    {
+        font-size: 18px;
+    }
+
+nav ul
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: clamp(10px, 3vw, 40px);
+    font-weight: 600;
+    padding: 0 10px;
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+}
+    button
+    {
+        margin-left: 5px;
+    }
+
+    #aviso
+    {
+        font-size: 14px;
+    }
+}
+
+
+html,
+body
+{
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+}
+
+body
+{
+    overflow-x: hidden;
+}
+
+header,
+main,
+footer
+{
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+}
+
+nav
+{
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+}
+
+nav ul
+{
+    width: 100%;
+    max-width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#logo
+{
+    margin: 10px auto;
+}

@@ -44,10 +44,29 @@
 
                 <p>A Creche é onde você deixará o seu animalzinho para que ele seja cuidado com banho, alimentação e amor</p>
             </section>
-        
+            <section id="servicos">
+                <h3>Serviços atuais</h3>
+                <div class="alinhar">
+                    <div class="servico">
+                        <h4>Hotel</h4>
+                        <img src="../img/Hotel.png" alt="Imagem de um cão e gato no hotelzinho.">
+                        <p>Nosso hotel é equipado para seu pet desfrutar de umas férias durante a sua ausência. É o lugar ideal, com camas confortaveis e funcionários ao dispor dos nossos amigos peludos.</p>
+                    </div>
+                    <div class="servico">
+                        <h4>Day-Care</h4>
+                        <img src="../img/Day-care.png" alt="Cachorro brincando no pátio">
+                        <p>Caso você tenha um dia corrido e sem muito tempo para se dedicar ao tratamento ideal do seu amiguinho, traga-o para nosso espaço, um dia inteiro com outros amiguinhos e um enriquecimento ambiental de qualidade.</p>
+                    </div>
+                    <div class="servico">   
+                        <h4>Cuidados especiais</h4>
+                        <img src="../img/Acessibilidade.png" alt="Cãozinho em uma cadeira de rodas">
+                        <p>Aqui em nosso estabelecimento também acolhemos seus amigos com necessidades especiais: Problemas de pele, deficiência visual, e muitos outros. O tempo todo eles e demais animais estarâo sempre sendo supervisionados.</p>
+                    </div>
+                </div>
+            </section>
             <section id="ocupacoes">
                 <h3>Ocupações atuais</h3>
-                <p>Abaixo estão as salas da creche, com indicações se estão ocupadas ou livres</p>
+                <p>Prezamos muito pelo cuidado do seu pet e queremos recebe-los com os espaços adequados e que satisfaz todas as suas necessidades.Abaixo estão as áreas atuais da creche e seus respectivos estados atuais:</p>
 
                 <table>
                     <caption>Creche da petshop</caption>
@@ -55,44 +74,39 @@
                     <thead>
                         <tr>
                             <th>Sala</th>
+                            <th>tipo de animal</th>
                             <th>Estado</th>
-                            <th>Tipo de Animal</th>
-                            <th>Capacidade</th>
-                            <th>Quantidade de Animais</th>
+                            <th>Acesso a suporte </th>
                         </tr>
                     </thead>
 
                     <tbody>
                         <tr>
-                            <td>20</td>
-                            <td>Livre</td>
+                            <td>Gatil</td>
                             <td>Gatos</td>
-                            <td>5</td>
-                            <td>2</td>
+                            <td>Pronta</td>
+                            <td>Presente</td>
                         </tr>
 
                         <tr>
-                            <td>19</td>
-                            <td>Cheia</td>
-                            <td>Cães</td>
-                            <td>5</td>
-                            <td>5</td>
+                            <td>Pátio 1</td>
+                            <td>Cães Pequenos</td>
+                            <td>Pronta</td>
+                            <td>Presente</td>
                         </tr>
 
                         <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td>Pátio 2</td>
+                            <td>Cães grandes</td>
+                            <td>Pronta</td>
+                            <td>Presente</td>
                         </tr>
 
                         <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td>Sala 1</td>
+                            <td>Mamíferos pequenos</td>
+                            <td>Em breve!</td>
+                            <td>Em breve!</td>
                         </tr>
                     </tbody>
 
@@ -103,8 +117,8 @@
                 <h3>Atendimento</h3>
                 <p>Gostaria de agenar uma estadia do seu animalzinho na creche? Preencha os dados abaixo!</p>
 
-                <form action="../backend/processa-contato.php" method="post">
-
+                <form action="../../backend/processa-contato.php" method="post">
+                    <input type="hidden" name="tipo" value="creche">
                     <fieldset>
                         <legend>Preencha as lacunas</legend>
 
@@ -164,9 +178,10 @@
         </main>
 
         <footer>
-            <p id="endereco">Av. Presidente Carlos Luz, 220 Bairro Caiçaras (Alto Caiçaras) Belo Horizonte MG, CEP 31230-010</p>
+            <p id="endereco">Av. Presidente Carlos Luz, 220 Bairro Caiçaras (Alto Caiçaras) Belo Horizonte MG, CEP 31230-010 Contato: (31) 998765432</p>
             <p id="infoGeral">2026 &middot; Newton Paiva Wyden &middot; WYD7324 &middot; Desenv. Web &middot; Grupo Sol</p>
+            <img src="../img/logo.jpg"  id="logo" alt="Logo da loja">
         </footer>
-        <img src="../img/logo.jpg"  id="logo" alt="Logo da loja">
+        
     </body>
 </html>

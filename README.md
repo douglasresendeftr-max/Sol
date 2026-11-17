@@ -107,11 +107,14 @@ Ela vem **depois** do `estilo.css`.
 ## Quem fez o quê
 
 
-| Integrante | Parte da folha de estilo |
+## Quem fez o quê
+
+
+| Integrante | O que fez |
 |---|---|
-| Miguel Amorim Otoni Ribeiro | o `:root`, o `box-sizing` e o segundo tema | atualização do css|
-| Thiago Magalhães Costa | tipografia: web font, escala e entrelinha | criar código config php e o sql|
-| Rafael Diniz Carneiro Vieira | página e conteúdo | criação do código js|
-| Kauan Gonçalvez de Almeida | cabeçalho e menu | processo-contato php|
-| Douglas Resende Furtado | tabela | atualização do readme|
-| Alexandre Pereira do Padro | formulário e rodapé | criação de slide|
+| Miguel Amorim Otoni Ribeiro | Css , Html e Js | atualização do css|
+| Thiago Magalhães Costa | Php, Html e Css | criar código config php e o sql|
+| Rafael Diniz Carneiro Vieira | Js, Css e html | criação do código js|
+| Kauan Gonçalvez de Almeida | Php e Html | processo-contato php|
+| Douglas Resende Furtado | Html e Css | atualização do readme|
+| Alexandre Pereira do Padro | Html | criação de slide|

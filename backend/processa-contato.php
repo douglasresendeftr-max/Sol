@@ -25,17 +25,21 @@ function receber($campo) {
 $nome = receber('nome');
 $email = receber('email');
 $nomep = receber('nomep');
-$assunto = receber('assunto');
+$pet = receber('pet');
+$dataInicio = receber('dataInicioCreche');
+$dataFim = receber('dataFimCreche');
 $mensagem = receber('mensagem');
+$assunto = '';
 $copia = receber('copia') === 'sim';
+$tipo = receber('tipo');
 
 try {
     require __DIR__ . '/config/conexao.php';
 
     $conexao->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    $sql = "INSERT INTO mensagens (nome, email, nomep, assunto, mensagem)
-            VALUES (:nome, :email, :nomep, :assunto, :mensagem)";
+    $sql = "INSERT INTO mensagens (nome, email, nomep, pet, data_inicio, data_fim, assunto, mensagem)
+            VALUES (:nome, :email, :nomep, :pet, :data_inicio, :data_fim, :assunto, :mensagem)";
 
     $consulta = $conexao->prepare($sql);
 
@@ -43,6 +47,9 @@ try {
         ':nome' => $nome,
         ':email' => $email,
         ':nomep' => $nomep,
+        ':pet' => $pet,
+        ':data_inicio' => $dataInicio,
+        ':data_fim' => $dataFim,
         ':assunto' => $assunto,
         ':mensagem' => $mensagem
     ]);
@@ -70,6 +77,7 @@ $totalCaracteres = mb_strlen($mensagem, 'UTF-8');
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Contato — PetShop Sol</title>
+    <!--<link rel="stylesheet" href="../frontend/css/estilo.css"> -->
 
     <style>
         * {
@@ -144,6 +152,7 @@ header h1 {
             }
         }
     </style>
+
 </head>
 <body>
     <div class="pagina">
@@ -170,8 +179,10 @@ header h1 {
                 <strong><?= escapar($email) ?></strong>
             </p>
 
-            <p>Pet: <?= escapar($nomep) ?></p>
-            <p>Assunto: <?= escapar($assunto) ?></p>
+            <p>Nome do pet: <?= escapar($nomep) ?></p>
+            <p>Tipo de animal: <?= escapar($pet) ?></p>
+            <p>Início da estadia: <?= escapar($dataInicio) ?></p>
+            <p>Fim da estadia: <?= escapar($dataFim) ?></p>
 
             <p>
                 Sua mensagem tem <?= $totalCaracteres ?> caracteres.

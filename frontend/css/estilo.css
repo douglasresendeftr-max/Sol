@@ -605,3 +605,11 @@ nav
 {
     margin: 10px auto;
 }
+
+
+/*A página de produtos está inacabada, portanto está escondida*/
+
+a[href='html/produtos.html'] , a[href='../html/produtos.html']
+{
+    display:none;
+}
